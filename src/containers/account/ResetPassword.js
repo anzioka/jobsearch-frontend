@@ -67,6 +67,7 @@ const ResetPassword = () => {
                     variant="outlined"
                     required
                     fullWidth
+                    type="email"
                     label="Email Address"
                     name="email" />
               </Grid>
@@ -75,6 +76,7 @@ const ResetPassword = () => {
                     variant="contained"
                     color="primary"
                     fullWidth
+                    size="large"
                     className={classes.submit}>
                   Reset Password
                 </Button>

@@ -94,6 +94,7 @@ const Login = () => {
                     fullWidth
                     variant="contained"
                     color="primary"
+                    size="large"
                     className={classes.submit}>
                   Login
                 </Button>
