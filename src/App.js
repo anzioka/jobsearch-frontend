@@ -1,17 +1,16 @@
-import React from 'react';
-
 import {
   BrowserRouter,
+  Redirect,
   Route,
   Switch,
-  Redirect,
 } from 'react-router-dom';
-import { ThemeProvider } from '@material-ui/styles';
+
 import { CssBaseline } from '@material-ui/core';
+import React from 'react';
+import { ThemeProvider } from '@material-ui/styles';
 import * as Routes from './constants/Routes';
-
-import { SignUp, Login, ResetPassword } from './containers/account';
-
+import RegisterCompany from './containers/company/RegisterCompany';
+import { Login, ResetPassword, SignUp } from './containers/account';
 import theme from './theme';
 
 function App() {
@@ -23,6 +22,7 @@ function App() {
           <Route path={Routes.SIGNUP} component={SignUp} />
           <Route path={Routes.LOGIN} component={Login} />
           <Route path={Routes.RESET} component={ResetPassword} />
+          <Route path={Routes.ENROLL} component={RegisterCompany} />
           <Redirect to={Routes.LOGIN} />
         </Switch>
       </ThemeProvider>
