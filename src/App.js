@@ -10,6 +10,7 @@ import React from 'react';
 import { ThemeProvider } from '@material-ui/styles';
 import * as Routes from './constants/Routes';
 import RegisterCompany from './containers/company/RegisterCompany';
+import EditProfile from './containers/profile/EditProfile';
 import { Login, ResetPassword, SignUp } from './containers/account';
 import theme from './theme';
 
@@ -23,6 +24,7 @@ function App() {
           <Route path={Routes.LOGIN} component={Login} />
           <Route path={Routes.RESET} component={ResetPassword} />
           <Route path={Routes.ENROLL} component={RegisterCompany} />
+          <Route path={Routes.PROFILE} component={EditProfile} />
           <Redirect to={Routes.LOGIN} />
         </Switch>
       </ThemeProvider>

@@ -9,6 +9,7 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
   ],
+  // parser: '@babel/eslint-parser',
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -17,7 +18,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
     sourceType: 'module',
   },
   plugins: [
@@ -59,6 +60,7 @@ module.exports = {
         "forbidDefaultForRequired": false,
       }
     ],
+    'react/forbid-prop-types': 'off',
     "react/sort-comp": "off",
     "react/state-in-constructor": ["warn", "always"],
     "react/static-property-placement": ["error", "static public field"],
