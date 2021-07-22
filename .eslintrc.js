@@ -27,6 +27,13 @@ module.exports = {
   ],
   rules: {
     "comma-dangle": "off",
+    'no-unused-vars': ["warn"],
+    "import/order": [
+      "warn",
+      {
+        "groups": ["builtin", "external", "internal", ["parent", "sibling"], "index"]
+      }
+    ],
     'react/jsx-filename-extension': 'off',
     "react/default-props-match-prop-types": [
       "error",
@@ -66,7 +73,9 @@ module.exports = {
     "react/static-property-placement": ["error", "static public field"],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/no-array-index-key": 'off'
+    "react/no-array-index-key": 'off',
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
   },
 };
 

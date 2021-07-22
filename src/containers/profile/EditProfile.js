@@ -77,25 +77,6 @@ const EditProfile = () => {
   return (
     <Paper elevation={0}>
       <Toolbar />
-      <div elevation={0} className={classes.header}>
-        <Container>
-          <Grid container spacing={2}>
-            <Grid item xs={8}>
-              <Typography variant="h3" className={classes.headerText} gutterBottom>
-                Edit Profile
-              </Typography>
-              <Typography variant="h6" className={classes.headerText}>
-                Let&apos;s customize your profile to attract employers
-              </Typography>
-            </Grid>
-            <Grid item xs={4}>
-              <Button disableElevation variant="contained">
-                Preview Profile
-              </Button>
-            </Grid>
-          </Grid>
-        </Container>
-      </div>
       <div className={classes.tabs}>
         <Container>
           <AppBar position="static" color="default">

@@ -1,19 +1,17 @@
 import React, { useReducer } from 'react';
 
-import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
-
-import PropTypes from 'prop-types';
-import SelectSchool from './SelectSchool';
-import SelectDegree from './SelectDegree';
-import SelectStudyField from './SelectStudyField';
-
+import Button from '@material-ui/core/Button';
 import DispatchContext from './DispatchContext';
-import StateContext from './StateContext';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import PropTypes from 'prop-types';
+import SelectDegree from './SelectDegree';
 import SelectMonthYear from './SelectMonthYear';
+import SelectSchool from './SelectSchool';
+import SelectStudyField from './SelectStudyField';
+import StateContext from './StateContext';
+import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
@@ -110,7 +108,7 @@ const EditEducationItem = ({ handleOnAddItem }) => {
   const validateInput = () => {
     let degreeError = '';
     let schoolError = '';
-    let startYearError = '';
+    const startYearError = '';
     let endYearError = '';
     let startMonthError = '';
     let endMonthError = '';
